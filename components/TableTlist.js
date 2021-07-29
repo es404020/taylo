@@ -44,11 +44,11 @@ const TableTlist = () => {
 
                 </Tr>
                 <Tbody>
-                    { Array(7).fill(1).map(key => {
+                    { [1,2,4,5,6,7,8,8].map(key => {
 
                      
 
-                         return <TableD key />
+                         return <TableD key={key} />
 
                     })}
 
