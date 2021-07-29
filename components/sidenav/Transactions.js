@@ -13,8 +13,8 @@ import { PhoneIcon, SearchIcon } from "@chakra-ui/icons";
 
 const Transactions = () => {
     return (
-        <Box mt="9" borderRadius="10px" style={{
-            border: "2px solid #E9F1FB",
+        <Box mt="9" borderRadius="10px"  bg="white"  boxShadow="md" style={{
+           // border: "2px solid #E9F1FB",
           }} w="100%" minH="400px" p="3" >
 
             <Flex direction="row" >

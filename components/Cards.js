@@ -23,7 +23,7 @@ import Statuslist from '../components/Statuslist';
 const Cards = () => {
     return (
        
-        <Flex width="80%" flex={10} bg="white" p="2em" marginLeft="4%" mt="70px" pb="75px"  minH="100vh" flexDir="column" overflowX="hidden" overflowY="auto"  
+        <Flex width="80%" flex={10} bg="#F5F6F8" p="2em" marginLeft="4%" mt="70px" pb="75px"  minH="100vh" flexDir="column" overflowX="hidden" overflowY="auto"  
         css={{
             '&::-webkit-scrollbar': {
               width: '0',
@@ -47,7 +47,7 @@ const Cards = () => {
 
 
             <Grid mb={5} templateColumns="repeat(4,2fr)" gap="6">
-                <Flex borderRadius="9px" bgGradient="linear(to-l, #482CD8, #02058A)" direction="column" color="white" p={5} justifyContent="space-around" style={{
+                <Flex borderRadius="9px" bgGradient="linear(to-l, #482CD8, #02058A)"  bg="#01048A" direction="column" color="white" p={5} justifyContent="space-around" style={{
                     border: "2px solid #E9F1FB",
 
                 }} w="350px" h="200" transition="transform .2s" _hover={{
@@ -324,10 +324,11 @@ const Cards = () => {
 
             <Grid templateColumns="repeat(4,2fr)" gap="6">
                 <Box borderRadius="10px"
+                boxShadow="md"
                 color="#273b71"
                     bgGradient="linear(to-bl, #27BC48, white,white,white)"
                     style={{
-                        border: "2px solid #E9F1FB",
+                      //  border: "2px solid #E9F1FB",
                     }} w="100%" h="150" p="3" transition="all .5s ease-out" _hover={{
                         //  transform: 'scale(1.1)',
                         color: "white",
@@ -347,9 +348,9 @@ const Cards = () => {
                     <Text fontWeight="light" fontSize="sm" >Customers</Text>
                 </Box>
                 <Box borderRadius="10px" 
-                
+                  boxShadow="md"
                 bgGradient="linear(to-bl, #B5C012, white,white,white)"style={{
-                    border: "2px solid #E9F1FB",
+                   // border: "2px solid #E9F1FB",
                 }} w="100%" h="150" p="3" transition="all .2s ease-in" _hover={{
                       //  transform: 'scale(1.1)',
                       color: "white",
@@ -368,9 +369,10 @@ const Cards = () => {
                     <Text fontWeight="light" fontSize="sm" >Revenue</Text>
                 </Box>
                 <Box borderRadius="10px"
+                  boxShadow="md"
                   bgGradient="linear(to-bl, #DF1839, white,white,white)"
                 style={{
-                    border: "2px solid #E9F1FB",
+                 //   border: "2px solid #E9F1FB",
                 }} w="100%" h="150" p="3" transition="transform .6s" _hover={{
                     color: "white",
                       background: "#DF1839"
@@ -387,9 +389,10 @@ const Cards = () => {
                     <Text fontWeight="light" fontSize="sm" >Total Subscribers</Text>
                 </Box>
                 <Box borderRadius="10px"
+                  boxShadow="md"
                   bgGradient="linear(to-bl, #357ae2, white,white,white)"
                 style={{
-                    border: "2px solid #E9F1FB",
+                    //border: "2px solid #E9F1FB",
                 }} w="100%" h="150" p="3" transition="transform .2s" _hover={{
                     color: "white",
                     background: "#357ae2"

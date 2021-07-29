@@ -15,8 +15,8 @@ import TableD from '../components/TableD'
 
 const TableTlist = () => {
     return (
-        <Box mt="9" position="relative" overflow="auto" mb={5} borderRadius="10px" style={{
-            border: "2px solid #E9F1FB",
+        <Box mt="9" bg="white"  boxShadow="md" position="relative" overflow="auto" mb={5} borderRadius="10px" style={{
+          //  border: "2px solid #E9F1FB",
         }} w="100%" minHeight="600px" p="3">
 
             <Flex direction="row" mb={5}>

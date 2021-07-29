@@ -19,7 +19,7 @@ import Cards from "../components/Cards";
 
 export default function Home() {
   return (
-    <Flex w="100%" flexDirection="column" position="relative">
+    <Flex w="100%" flexDirection="column" bg="red" position="relative">
 
       <Headers />
 
@@ -29,7 +29,7 @@ export default function Home() {
 
         <Sidebar />
 
-        <Flex w="100%" height="100vh" flexDirection="column" flex={1} justifyContent="start" bg="green">
+        <Flex w="100%" height="100vh" flexDirection="column" flex={1} justifyContent="start"bg="red">
           {/* <RouteIndcator /> */}
           <Flex flexDirection="row" overflowY="hidden">
 
