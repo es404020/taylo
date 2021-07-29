@@ -42,9 +42,9 @@ const TableD = () => {
         <Td>Transfer</Td>
         <Td >$100,000</Td>
         <Td><HStack spacing={4}>
-            <Tag size="sm" key="2" variant="subtle" colorScheme="red">
+            <Tag  borderRadius="full" size="sm" key="2" variant="subtle"  bg="#DE443612" color="#DE4436">
 
-                <TagLabel px={5} py={1}>Failed</TagLabel>
+                <TagLabel px={1} py={1}>Failed</TagLabel>
             </Tag>
         </HStack></Td>
         <Td ><Text >8 May 2021 10:25pm</Text></Td>

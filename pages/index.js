@@ -34,7 +34,7 @@ export default function Home() {
           <Flex flexDirection="row" overflowY="hidden">
 
             <Cards />
-            <Flex width="10%" flex={2} overflowY="auto" p="3em" mt="70px" bg="orange" overflow="auto"
+            <Flex width="10%" direction="column" flex={2} overflowY="auto" p="3em" mt="70px" bg="white" overflowX="hidden"
               css={{
                 '&::-webkit-scrollbar': {
                   width: '0',
@@ -51,7 +51,27 @@ export default function Home() {
 
             >
 
-              ime will be served by Next.js. Files added at runtime be available. We recommend using a third party service like AWS S3 for persistent file storage.
+
+          <Flex direction="row" mb="5" justifyContent="space-evenly">
+
+            <Circle size="50px" style={{
+              border: "1px solid #e7effa"
+            }}>
+              <Icon as={MdNotifications} w={6} h={6} color="#243870" display="inline" />
+            </Circle>
+
+            <Spacer />
+            <Circle size="50px" style={{
+              border: "1px solid #e7effa"
+            }}>
+              <Icon as={FaPen} w={5} h={5} color="#243870" display="inline" />
+            </Circle>
+
+
+          </Flex>
+
+
+      
             </Flex>
 
 
