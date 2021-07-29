@@ -22,8 +22,12 @@ import Statuslist from '../components/Statuslist';
 
 const Cards = () => {
     return (
+        
        
-        <Flex width="80%" flex={10} bg="#F5F6F8" p="2em" marginLeft="4%" mt="70px" pb="75px"  minH="100vh" flexDir="column" overflowX="hidden" overflowY="auto"  
+        <Flex width="80%" flex={10} bg="#F5F6F8" w="100%" marginLeft="2%" mt="140px" px="3%"  py="2%" pb="75px"  minH="100vh" flexDir="column" overflowX="hidden" overflowY="auto"  
+        style={{
+            border: "1px solid #E1E3E6",
+      }}
         css={{
             '&::-webkit-scrollbar': {
               width: '0',
@@ -416,7 +420,7 @@ const Cards = () => {
                         <Spacer />
 
                     </Flex>
-                    <Text  fontWeight="bold" mt="5" fontSize="xl">1,830</Text>
+                    <Text  fontWeight="semibold" mt="5" fontSize="xl">1,830</Text>
 
                     <Text fontWeight="light" fontSize="sm" >Customers</Text>
                 </Box>
@@ -457,7 +461,7 @@ const Cards = () => {
                         <Spacer />
 
                     </Flex>
-                    <Text fontWeight="bold" mt="5" fontSize="xl">60</Text>
+                    <Text fontWeight="semibold" mt="5" fontSize="xl">60</Text>
 
                     <Text fontWeight="light" fontSize="sm" >Total Subscribers</Text>
                 </Box>
@@ -477,9 +481,9 @@ const Cards = () => {
                         <Spacer />
 
                     </Flex>
-                    <Text  fontWeight="bold" mt="5" fontSize="xl">$100,000</Text>
+                    <Text  fontWeight="semibold" mt="5" fontSize="xl">$100,000</Text>
 
-                    <Text fontWeight="medium" fontSize="sm" >Balance</Text>
+                    <Text fontWeight="light" fontSize="sm" >Balance</Text>
                 </Box>
             </Grid>
 

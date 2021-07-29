@@ -16,10 +16,11 @@ import Headers from "../components/Header";
 import Sidebar from "../components/sidenav/Sidebar";
 import { RouteIndcator } from '../components/sidenav/RouteIndcator';
 import Cards from "../components/Cards";
+import Three from "../components/Three";
 
 export default function Home() {
   return (
-    <Flex w="100%" flexDirection="column" bg="red" position="relative">
+    <Flex w="100%" flexDirection="column" bg="white" position="relative">
 
       <Headers />
 
@@ -29,51 +30,14 @@ export default function Home() {
 
         <Sidebar />
 
-        <Flex w="100%" height="100vh" flexDirection="column" flex={1} justifyContent="start"bg="red">
-          {/* <RouteIndcator /> */}
-          <Flex flexDirection="row" overflowY="hidden">
-
+        <Flex w="100%" height="100vh"  flexDirection="column" flex={1} justifyContent="start" bg="#F9F9F9">
+       
+          <Flex flexDirection="row"  overflowY="hidden">
+          <RouteIndcator boxShadow="md" style={{
+              border: "1px solid red",
+        }}/>
             <Cards />
-            <Flex width="10%" direction="column" flex={2} overflowY="auto" p="3em" mt="70px" bg="white" overflowX="hidden"
-              css={{
-                '&::-webkit-scrollbar': {
-                  width: '0',
-                },
-                '&::-webkit-scrollbar-track': {
-                  width: '0',
-                },
-                '&::-webkit-scrollbar-thumb': {
-                  background: "red",
-                  borderRadius: '24px',
-                },
-              }}
-
-
-            >
-
-
-          <Flex direction="row" mb="5" justifyContent="space-evenly">
-
-            <Circle size="50px" style={{
-              border: "1px solid #e7effa"
-            }}>
-              <Icon as={MdNotifications} w={6} h={6} color="#243870" display="inline" />
-            </Circle>
-
-            <Spacer />
-            <Circle size="50px" style={{
-              border: "1px solid #e7effa"
-            }}>
-              <Icon as={FaPen} w={5} h={5} color="#243870" display="inline" />
-            </Circle>
-
-
-          </Flex>
-
-
-      
-            </Flex>
-
+            <Three />
 
           </Flex>
 

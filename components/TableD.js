@@ -17,7 +17,7 @@ const TableD = () => {
         <Tr fontSize="sm" fontWeight="light" color="#53535F">
         <Th><Checkbox ></Checkbox></Th>
         <Td>
-            <Text display="block"  >#5331</Text>
+            <Text display="block" fontSize="sm" fontWeight="light" color="#53535F"  >#5331</Text>
 
         </Td>
         <Td
@@ -32,22 +32,22 @@ const TableD = () => {
 
       {/* <Spacer />
        */}
-        <Text ml={2}>Eniola Ajani</Text>
+        <Text fontSize="sm" fontWeight="light" color="#53535F" ml={2}>Eniola Ajani</Text>
             </Flex>
 
            
         
         </Td>
 
-        <Td>Transfer</Td>
-        <Td >$100,000</Td>
+        <Td fontSize="sm" fontWeight="light" color="#53535F">Transfer</Td>
+        <Td fontSize="sm" fontWeight="light" color="#53535F">$100,000</Td>
         <Td><HStack spacing={4}>
             <Tag  borderRadius="full" size="sm" key="2" variant="subtle"  bg="#DE443612" color="#DE4436">
 
                 <TagLabel px={1} py={1}>Failed</TagLabel>
             </Tag>
         </HStack></Td>
-        <Td ><Text >8 May 2021 10:25pm</Text></Td>
+        <Td ><Text fontSize="sm" fontWeight="light" color="#53535F" >8 May 2021 10:25pm</Text></Td>
 
     </Tr>
     )
