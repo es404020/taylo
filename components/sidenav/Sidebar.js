@@ -67,7 +67,7 @@ function Sidebar() {
       top="0px"
       h="100vh"
       zIndex="2"
-bg="white"
+      bg="#F9F9F9"
       boxShadow="md"
       width="5%"
       flexDir="column"
