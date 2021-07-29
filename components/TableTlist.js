@@ -44,7 +44,7 @@ const TableTlist = () => {
 
                 </Tr>
                 <Tbody>
-                    { [1,2,4,5,6,7,8,8].map(key => {
+                    { [1,2,4,5,8].map(key => {
 
                      
 
