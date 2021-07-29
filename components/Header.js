@@ -21,7 +21,7 @@ import {BsGrid3X3Gap} from 'react-icons/bs';
         }}>
   
           <Flex   alignItems="center" justifyContent="space-evenly" >
-            <Box ml="30px">
+            <Box ml="25px">
              
                 <Icon as={MdGroupWork}  boxSize={9}  color="#357ae2" display="inline" />
             
