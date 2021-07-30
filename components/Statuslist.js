@@ -13,7 +13,7 @@ const Statuslist = () => {
           // border: "2px solid #E9F1FB",
         }} maxHeight="500px" overflowX="hidden" overflowY="auto" p={5} direction="column">
 
-        <Text color="#000000" fontWeight="semibold">Top Merchants</Text>
+        <Text color="#000000" fontWeight="semibold">Top Merchant</Text>
 
 
         {[1, 2, 4, 5, 7].map(key => {
