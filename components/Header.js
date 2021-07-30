@@ -24,14 +24,12 @@ const Header = () => {
         <Box ml="25px">
 
           {/* <Icon as={MdGroupWork}  boxSize={9}  color="#357ae2" display="inline" /> */}
-          <Tooltip hasArrow label="Search places" bg="red.600">
-            <Image
+          <Image
               //  boxSize="10px"
               // objectFit="cover"
               src="logo.png"
               alt=""
             />
-          </Tooltip>
 
 
 

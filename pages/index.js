@@ -20,7 +20,7 @@ import Three from "../components/Three";
 
 export default function Home() {
   return (
-    <Flex w="100%" flexDirection="column" bg="white" position="relative">
+    <Flex w="100%"  flexDirection="column" bg="white" position="relative">
 
       <Headers />
 
@@ -32,7 +32,7 @@ export default function Home() {
 
         <Flex w="100%" height="100vh"  flexDirection="column" flex={1} justifyContent="start" bg="#F9F9F9">
        
-          <Flex flexDirection="row"  overflowY="hidden">
+          <Flex flexDirection="row" height="auto" overflowY="hidden">
           <RouteIndcator boxShadow="md" style={{
               border: "1px solid red",
         }}/>

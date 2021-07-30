@@ -15,16 +15,16 @@ import TranscationCard from '../components/sidenav/TranscationCard';
 
 const Rate = () => {
     return (
-        <Flex mt={9}>
+        <Grid mt={9} templateColumns="repeat(4,2fr)" gap="6">
 
 
             <TranscationCard icon={BsQuestionCircle} text={"Success Rate"} error={false} />
 
-            <Spacer />
 
             <TranscationCard icon={BsQuestionCircle} text={"Payment Issues"} />
-        </Flex>
+        </Grid>
     )
 }
 
 export default Rate
+{/* <Grid mb={9} templateColumns="repeat(4,2fr)" gap="6"> */}

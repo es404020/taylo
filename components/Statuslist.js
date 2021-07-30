@@ -7,7 +7,7 @@ import CardIssues from './CardIssues'
 
 const Statuslist = () => {
   return (
-    <Flex mt={15}>
+    <Grid mt={15} templateColumns="repeat(4,2fr)" gap="6">
       <Flex width="680px" borderRadius="10px" boxShadow="md" bg=
         "white" style={{
           // border: "2px solid #E9F1FB",
@@ -28,7 +28,7 @@ const Statuslist = () => {
 
 
 
-      <Spacer />
+    
 
       <Flex width="680px" boxShadow="md" bg="white" borderRadius="10px" style={{
 
@@ -49,7 +49,7 @@ return <CardIssues key={key} />
 
 
       
-    </Flex>
+    </Grid>
   )
 }
 

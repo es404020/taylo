@@ -3,7 +3,7 @@
 
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Flex, Text, Image, Spacer, WrapItem, InputRightElement, Heading, Progress, Box, Button, List, ListItem, ListIcon, HStack, Icon, InputGroup, InputLeftElement, Input, Grid, Select, Table, Circle, Tbody, Tfoot, Tr, Th, Td, Avatar, Square, position, Divider } from "@chakra-ui/react"
+import { Flex, Text, Image, Spacer, WrapItem, InputRightElement, Heading, Progress, Box, Button, List, ListItem, ListIcon, HStack, Icon, InputGroup, InputLeftElement, Input, Grid, Select, Table, Circle, Tbody, Tfoot, Tr, Th, Td, Avatar, Square, position, Divider, background } from "@chakra-ui/react"
 
 import { useRouter } from 'next/router';
 import { MdCheckCircle, MdDashboard, MdGroupWork, MdMenu, MdGridOn, MdInsertLink, MdNotifications, MdPeople, MdPerson, MdReceipt, MdSend, MdSettings, MdShoppingBasket, MdShoppingCart } from 'react-icons/md'
@@ -24,7 +24,7 @@ const Cards = () => {
     return (
         
        
-        <Flex width="80%" flex={10} bg="#F5F6F8" w="100%" marginLeft="2%" mt="140px" px="3%"  py="2%" pb="75px"  minH="100vh" flexDir="column" overflowX="hidden" overflowY="auto"  
+        <Flex width="80%" flex={10} bg="#F5F6F8" w="100%" marginLeft="2%" mt="140px" px="3%"  py="2%" pb="75px"   flexDir="column" overflowX="hidden" overflowY="auto"  
         style={{
             border: "1px solid #E1E3E6",
       }}
@@ -36,7 +36,7 @@ const Cards = () => {
               width: '0',
             },
             '&::-webkit-scrollbar-thumb': {
-              background: "gray",
+             
               borderRadius: '24px',
             },
           }}
@@ -51,12 +51,15 @@ const Cards = () => {
 
 
             <Grid mb={5} templateColumns="repeat(4,2fr)" gap="6">
-                <Flex borderRadius="9px" bgGradient="linear(to-l, #482CD8, #02058A)" overflow="auto" bg="#01048A" direction="column" color="white" p={5} justifyContent="space-around" style={{
+
+            {/* #8A0161 #01048A  482CD8 02058A*/}
+                <Flex borderRadius="9px" bgGradient="linear(to-l, #8A0161, #8A0161)" overflow="auto" bg="#01048A" direction="column" color="white" p={5} justifyContent="space-around" style={{
                     border: "2px solid #E9F1FB",
 
                 }} w="350px" h="200" transition="transform .2s" _hover={{
                     transform: 'scale(1.1)',
-                    color: "white"
+                    color: "white",
+                    background:"#8A0161"
                 }} >
                     <Flex direction="row" alignItems="baseline" justifyContent="space-between">
                         <FaSimCard size={30} style={{
@@ -103,7 +106,7 @@ const Cards = () => {
                   width: '1px',
                 },
                 '&::-webkit-scrollbar-thumb': {
-                  background: "red",
+               
                   borderRadius: '0',
                 },
               }}  >
@@ -116,9 +119,12 @@ const Cards = () => {
                         borderRadius: "1px solid #E1E3E6",
 
                     }} w="350px" h="200" p="3" transition="transform .2s" _hover={{
-                        transform: 'scale(1.1)',
-                        color: "#357ae2",
-                       // zIndex: "1000",
+                        
+                     
+                        transform: 'scale(1.5)',
+                        color: "white",
+                        background:"#8A0161",
+                        zIndex: "1000",
                         //position:"relative",
                        // top:"-5px"
                     }} >
