@@ -25,7 +25,7 @@ const Transactions = () => {
               </Flex>
               <Spacer />
 
-              <Select  minW="200px" variant="outline" size="lg" w={20}>
+              <Select  minW="200px" variant="outline" size="md" w={20}>
                 <option >Last 30 days</option>
               </Select>
 

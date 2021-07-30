@@ -10,6 +10,7 @@ import { MdCheckCircle, MdDashboard, MdGroupWork, MdMenu, MdGridOn, MdInsertLink
 import { FaPen, FaSimCard, FaCcVisa } from 'react-icons/fa';
 import { GrUserSettings } from "react-icons/gr";
 import { IoIosAddCircle } from "react-icons/io";
+import Activities from "./Activities";
 
 const Three = () => {
     return (
@@ -36,7 +37,7 @@ const Three = () => {
 
 
             <Flex direction="row" mb="5" justifyContent="space-evenly">
-                <Text color="#000000">Team</Text>
+                <Text fontWeight="semibold" color="#000000">Team</Text>
                 <Spacer />
 
                 <Icon as={GrUserSettings} w={5} h={5} color="#243870" display="inline" />
@@ -46,14 +47,14 @@ const Three = () => {
             </Flex>
             <Flex mt={5} mb={5} justifyContent="space-between" >
                 <AvatarGroup size="md" max={5}>
-                <Avatar name="Prosper Otemuyiwa" src="https://bit.ly/prosper-baba" />
+                    <Avatar name="Prosper Otemuyiwa" src="https://bit.ly/prosper-baba" />
                     <Avatar name="Christian Nwamba" src="https://bit.ly/code-beast" />
                     <Avatar name="Ryan Florence" src="https://bit.ly/ryan-florence" />
                     <Avatar name="Segun Adebayo" src="https://bit.ly/sage-adebayo" />
                     <Avatar name="Kent Dodds" src="https://bit.ly/kent-c-dodds" />
                     <Avatar name="Segun Adebayo" src="https://bit.ly/sage-adebayo" />
                     <Avatar name="Kent Dodds" src="https://bit.ly/kent-c-dodds" />
-                 
+
                 </AvatarGroup>
 
                 <Icon alignSelf="self" as={IoIosAddCircle} w={5} h={5} color="#01048A" display="inline" />
@@ -77,7 +78,26 @@ const Three = () => {
 
             </Flex>
 
-            <Divider mt={5} />
+            <Divider mt={5} mb={5} />
+
+            <Flex direction="column">
+
+                <Text color="#000000" fontWeight="semibold">Recent Activities</Text>
+
+                <Flex fontSize="xs" width="full"  direction="column" minHeight="250px" overflowY="auto" overflowX="hidden" py={5}  justifyContent="space-between">
+
+                   
+                { [10,2,4,5,7,9,0].map(key => {
+
+                     
+
+return <Activities key={key} />
+
+})}
+
+                </Flex>
+
+            </Flex>
 
         </Flex>
     )

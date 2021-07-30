@@ -23,7 +23,7 @@ const TableTlist = () => {
                 <Text color="#273b71" fontWeight="bold" fontSize="md" mb="4" mr="3">Recent Transactions</Text>
                 <Spacer />
 
-                <Select minW="150px" variant="outline" size="md" w={20}>
+                <Select minW="150px" variant="outline" size="sm" w={20}>
                     <option >Last 30 days</option>
                 </Select>
 

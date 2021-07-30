@@ -65,15 +65,15 @@ const Header = () => {
 
         <Box mr="25px">
 
-          <Circle size="30px" style={{
+          <Circle size="40px" style={{
             border: "1px solid #2A3042"
           }}>
             <WrapItem>
               <Avatar
-                size="xs"
+                size="sm"
                 name="Kola Tioluwani"
-                src="https://bit.ly/tioluwani-kolawole"
-              />{" "}
+                src="https://bit.ly/code-beast" 
+              />
             </WrapItem>
           </Circle>
 
