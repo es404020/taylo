@@ -7,8 +7,8 @@ import CardIssues from './CardIssues'
 
 const Statuslist = () => {
   return (
-    <Grid mt={15} templateColumns="repeat(4,2fr)" gap="6">
-      <Flex width="680px" borderRadius="10px" boxShadow="md" bg=
+    <Grid mt={15} templateColumns="repeat(2,2fr)" gap="6">
+      <Flex  borderRadius="10px" boxShadow="md" bg=
         "white" style={{
           // border: "2px solid #E9F1FB",
         }} maxHeight="500px" overflowX="hidden" overflowY="auto" p={5} direction="column">
@@ -30,7 +30,7 @@ const Statuslist = () => {
 
     
 
-      <Flex width="680px" boxShadow="md" bg="white" borderRadius="10px" style={{
+      <Flex  boxShadow="md" bg="white" borderRadius="10px" style={{
 
 }} maxHeight="500px" p={5} direction="column" overflowX="hidden" overflowY="auto">
   <Text color="#000000" fontWeight="semibold">Card Issues</Text>

@@ -13,7 +13,7 @@ import {BsQuestionCircle} from 'react-icons/bs'
 
 const TranscationCard = ({icon,text,error=true}) => {
     return (
-        <Flex width="680px" borderRadius="10px"  bg="white"  boxShadow="md" style={{
+        <Flex  borderRadius="10px"  bg="white"  boxShadow="md" style={{
            // border: "2px solid #E9F1FB",
           }}  height="353px" p={3} direction="column">
 

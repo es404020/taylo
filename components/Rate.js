@@ -15,7 +15,7 @@ import TranscationCard from '../components/sidenav/TranscationCard';
 
 const Rate = () => {
     return (
-        <Grid mt={9} templateColumns="repeat(4,2fr)" gap="6">
+        <Grid mt={9} templateColumns="repeat(2,2fr)" gap="6">
 
 
             <TranscationCard icon={BsQuestionCircle} text={"Success Rate"} error={false} />
