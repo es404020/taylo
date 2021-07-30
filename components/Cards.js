@@ -301,7 +301,7 @@ const Cards = () => {
                         </Flex>
                     </Flex>
 
-
+{/* 
                     <Flex borderRadius="10px" boxShadow="md" id="2" zIndex="14" marginLeft="480px" bg="white" position="absolute" top="0" left="0" justifyContent="space-between" flexDirection="column" style={{
                       //  border: "2px solid #E9F1FB",
                     }} w="350px" h="200" p="3" transition="transform .2s" _hover={{
@@ -317,7 +317,7 @@ const Cards = () => {
                         </Box>
 
                         <Flex direction="row" alignItems="baseline" justifyContent="space-between">
-                            {/* <AiFillPieChart size={30} color="#9c55e1" /> */}
+                         
 
                             <Image
                                 //  boxSize="10px"
@@ -327,10 +327,10 @@ const Cards = () => {
                             />
 
                         </Flex>
-                    </Flex>
+                    </Flex> */}
 
 
-                    <Flex borderRadius="10px" boxShadow="md" id="2" zIndex="14" marginLeft="540px" bg="white" position="absolute" top="0" left="0" justifyContent="space-between" flexDirection="column" style={{
+                    {/* <Flex borderRadius="10px" boxShadow="md" id="2" zIndex="14" marginLeft="540px" bg="white" position="absolute" top="0" left="0" justifyContent="space-between" flexDirection="column" style={{
                        // border: "2px solid #E9F1FB",
                     }} w="350px" h="200" p="3" transition="transform .2s" _hover={{
                         transform: 'scale(1.1)',
@@ -345,7 +345,7 @@ const Cards = () => {
                         </Box>
 
                         <Flex direction="row" alignItems="baseline" justifyContent="space-between">
-                            {/* <AiFillPieChart size={30} color="#9c55e1" /> */}
+                         
 
                             <Image
                                 //  boxSize="10px"
@@ -356,91 +356,10 @@ const Cards = () => {
 
                         </Flex>
                     </Flex>
-                    <Flex borderRadius="10px" boxShadow="md"  id="2" zIndex="14" marginLeft="620px" bg="white" position="absolute" top="0" left="0" justifyContent="space-between" flexDirection="column" style={{
-                        //border: "2px solid #E9F1FB",
-                    }} w="150px" h="200" p="3" transition="transform .2s" _hover={{
-                        transform: 'scale(1.1)',
-                        color: "#357ae2",
-                        zIndex: "100",
-                        width:"350px"
-                    }} >
-                        <Box position="relative">
-
-                            <Text position="absolute" left="-3" color="#273b71" style={{
-                                transform: "rotate(-90deg)"
-                            }} fontWeight="bold" mt="5" fontSize="xs" >**** 5675</Text>
-                        </Box>
-
-                        <Flex direction="row" alignItems="baseline" justifyContent="space-between">
-                            {/* <AiFillPieChart size={30} color="#9c55e1" /> */}
-
-                            <Image
-                                //  boxSize="10px"
-                                // objectFit="cover"
-                                src="mastercardlogo.png"
-                                alt=""
-                            />
-
-                        </Flex>
-                    </Flex>
+                     */}
 
 
-                    <Flex borderRadius="10px" boxShadow="md"  id="2" zIndex="15" marginLeft="680px" bg="white" position="absolute" top="0" left="0" justifyContent="space-between" flexDirection="column" style={{
-                        //border: "2px solid #E9F1FB",
-                    }} w="250px" h="200" p="3" transition="transform .2s" _hover={{
-                        transform: 'scale(1.1)',
-                        color: "#357ae2",
-                        zIndex: "100",   width:"350px"
-                    }} >
-                        <Box position="relative">
-
-                            <Text position="absolute" left="-3" color="#273b71" style={{
-                                transform: "rotate(-90deg)"
-                            }} fontWeight="bold" mt="5" fontSize="xs" >**** 5675</Text>
-                        </Box>
-
-                        <Flex direction="row" alignItems="baseline" justifyContent="space-between">
-                            {/* <AiFillPieChart size={30} color="#9c55e1" /> */}
-
-                            <Image
-                                //  boxSize="10px"
-                                // objectFit="cover"
-                                src="mastercardlogo.png"
-                                alt=""
-                            />
-
-                        </Flex>
-                    </Flex>
-                    <Flex borderRadius="10px" boxShadow="md"  id="2" zIndex="16" marginLeft="740px" bg="white" position="absolute" top="0" left="0" justifyContent="space-between" flexDirection="column" style={{
-                        //border: "2px solid #E9F1FB",
-                    }} w="250px" h="200" p="3" transition="transform .2s" _hover={{
-                        transform: 'scale(1.1)',
-                        color: "#357ae2",
-                        zIndex: "100",   width:"150px"
-                    }} >
-                        <Box position="relative">
-
-                            <Text position="absolute" left="-3" color="#273b71" style={{
-                                transform: "rotate(-90deg)"
-                            }} fontWeight="bold" mt="5" fontSize="xs" >**** 5675</Text>
-                        </Box>
-
-                        <Flex direction="row" alignItems="baseline" justifyContent="space-between">
-                            {/* <AiFillPieChart size={30} color="#9c55e1" /> */}
-
-                            <Image
-                                //  boxSize="10px"
-                                // objectFit="cover"
-                                src="mastercardlogo.png"
-                                alt=""
-                            />
-
-                        </Flex>
-                    </Flex>
-
-
-
-
+                   
 
 
 
