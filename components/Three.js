@@ -14,7 +14,7 @@ import Activities from "./Activities";
 
 const Three = () => {
     return (
-        <Flex width="20%" direction="column" flex={2} overflowY="auto" p="3em" mt="140px" bg="white" overflowX="hidden"
+        <Flex width="20%" direction="column" flex={2} overflowY="auto" p="2em" mt="140px" bg="white" overflowX="hidden"
 
             style={{
                 border: "1px solid #E1E3E6",
