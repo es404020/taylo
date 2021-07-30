@@ -42,7 +42,7 @@ const NavItem = ({ title, icon, active, show = true }) => {
                     >
                         <Flex flexDir="column" alignItems="center" >
                             <Icon color={active ? "#01048A" : "#9C9C9C"} as={icon} h="24px" w="24px" _hover={{ textDecor: 'none', color: "red" }} />
-                            <Text textDecor="none" boxSizing="border-box" color={active ? "#01048A" : "#9C9C9C"} fontSize="xs">{title}</Text>
+                            <Text textDecor="none" boxSizing="border-box" color={active ? "#01048A" : "#9C9C9C"} fontSize="xs" px={1}>{title}</Text>
                         </Flex>
                     </MenuButton>
                 </Link>
