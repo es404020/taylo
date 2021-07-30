@@ -257,7 +257,7 @@ const Cards = () => {
                         </Box>
 
                         <Flex direction="row" alignItems="baseline" justifyContent="space-between">
-                            {/* <AiFillPieChart size={30} color="#9c55e1" /> */}
+                        
 
                             <Image
                                 //  boxSize="10px"
@@ -289,7 +289,7 @@ const Cards = () => {
                         </Box>
 
                         <Flex direction="row" alignItems="baseline" justifyContent="space-between">
-                            {/* <AiFillPieChart size={30} color="#9c55e1" /> */}
+                         
 
                             <Image
                                 //  boxSize="10px"
@@ -301,7 +301,7 @@ const Cards = () => {
                         </Flex>
                     </Flex>
 
-{/* 
+
                     <Flex borderRadius="10px" boxShadow="md" id="2" zIndex="14" marginLeft="480px" bg="white" position="absolute" top="0" left="0" justifyContent="space-between" flexDirection="column" style={{
                       //  border: "2px solid #E9F1FB",
                     }} w="350px" h="200" p="3" transition="transform .2s" _hover={{
@@ -327,7 +327,7 @@ const Cards = () => {
                             />
 
                         </Flex>
-                    </Flex> */}
+                    </Flex>
 
 
                     {/* <Flex borderRadius="10px" boxShadow="md" id="2" zIndex="14" marginLeft="540px" bg="white" position="absolute" top="0" left="0" justifyContent="space-between" flexDirection="column" style={{
