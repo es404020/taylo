@@ -25,6 +25,7 @@ import {
   Circle,
   Tbody,
   Tfoot,
+  useColorModeValue,
   Tr,
   Th,
   Td,
@@ -49,6 +50,7 @@ import {
   MdSettings,
   MdShoppingBasket,
   MdShoppingCart,
+
 } from "react-icons/md";
 import { AiFillPieChart, AiOutlineCreditCard } from "react-icons/ai";
 import { GiPiggyBank } from "react-icons/gi";
@@ -60,6 +62,9 @@ import { FaUnlink } from "react-icons/fa"
 import { BsFlagFill } from "react-icons/bs"
 
 function Sidebar() {
+  const bg = useColorModeValue("#F9F9F9", "rgb(27, 32, 44)");
+    const text = useColorModeValue("white", "rgb(27, 32, 44)");
+    const tr= useColorModeValue("#53535F", "white");
   return (
     <Flex
       pos="fixed"
@@ -67,7 +72,7 @@ function Sidebar() {
       top="0px"
       h="100vh"
       zIndex="2"
-      bg="#F9F9F9"
+      bg={bg}
       boxShadow="md"
       width="5%"
       flexDir="column"

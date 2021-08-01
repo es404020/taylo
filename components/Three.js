@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Flex, Text, AvatarGroup, Image, Wrap, Spacer, WrapItem, InputRightElement, Heading, Progress, Box, Button, List, ListItem, ListIcon, HStack, Icon, InputGroup, InputLeftElement, Input, Grid, Select, Table, Circle, Tbody, Tfoot, Tr, Th, Td, Avatar, Square, position, Divider } from "@chakra-ui/react"
+import { Flex, Text, AvatarGroup,useColorMode,useColorModeValue, IconButton ,Image, Wrap, Spacer, WrapItem, InputRightElement, Heading, Progress, Box, Button, List, ListItem, ListIcon, HStack, Icon, InputGroup, InputLeftElement, Input, Grid, Select, Table, Circle, Tbody, Tfoot, Tr, Th, Td, Avatar, Square, position, Divider } from "@chakra-ui/react"
 
 
 import { MdCheckCircle, MdDashboard, MdGroupWork, MdMenu, MdGridOn, MdInsertLink, MdNotifications, MdPeople, MdPerson, MdReceipt, MdSend, MdSettings, MdShoppingBasket, MdShoppingCart } from 'react-icons/md'
@@ -12,12 +12,17 @@ import { GrUserSettings } from "react-icons/gr";
 import { IoIosAddCircle } from "react-icons/io";
 import Activities from "./Activities";
 
+
 const Three = () => {
+    const { colorMode, toggleColorMode } = useColorMode()
+    const bg = useColorModeValue("white", "rgb(27, 32, 44)");
+    const text = useColorModeValue("white", "rgb(27, 32, 44)");
+    const bgcolor = useColorModeValue(" 1px solid #E1E3E6", " 1px solid rgb(27, 32, 44)");
     return (
-        <Flex width="20%" direction="column" flex={2} overflowY="auto" p={9} mt="140px" bg="white" overflowX="hidden"
+        <Flex width="20%" direction="column" flex={2} overflowY="auto" p={9} mt="140px" bg={bg} overflowX="hidden"
 
             style={{
-                border: "1px solid #E1E3E6",
+               border: bgcolor,
             }}
             css={{
                 '&::-webkit-scrollbar': {
@@ -37,12 +42,12 @@ const Three = () => {
 
 
             <Flex direction="row" mb="5" justifyContent="space-evenly">
-                <Text fontWeight="semibold" color="#000000">Team</Text>
+                <Text fontWeight="semibold" >Team</Text>
                 <Spacer />
-
-                <Icon as={GrUserSettings} w={5} h={5} color="#243870" display="inline" />
-
-
+{/* 
+                <Icon as={GrUserSettings} w={5} h={5} color="#243870" display="inline" /> */}
+                {/* onClick={toggleColorMode} */}
+                <IconButton aria-label="Search database" onClick={toggleColorMode} icon={<GrUserSettings />} />
 
             </Flex>
             <Flex mt={5} mb={5} justifyContent="space-between" >
@@ -82,7 +87,7 @@ const Three = () => {
 
             <Flex direction="column">
 
-                <Text color="#000000" fontWeight="semibold">Recent Activities</Text>
+                <Text  fontWeight="semibold">Recent Activities</Text>
 
                 <Flex fontSize="xs" width="full"  direction="column" minHeight="250px" overflowY="auto" overflowX="hidden" py={5}  justifyContent="space-between">
 

@@ -1,9 +1,9 @@
 
 import { extendTheme } from "@chakra-ui/react"
-const theme = extendTheme({
+const themes = extendTheme({
   fonts: {
     heading: "Poppins",
     body: "Poppins",
   },
 })
-export default theme
+export default themes

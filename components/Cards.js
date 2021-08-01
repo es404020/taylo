@@ -3,10 +3,10 @@
 
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Flex, Text, Image, Spacer, WrapItem, InputRightElement, Heading, Progress, Box, Button, List, ListItem, ListIcon, HStack, Icon, InputGroup, InputLeftElement, Input, Grid, Select, Table, Circle, Tbody, Tfoot, Tr, Th, Td, Avatar, Square, position, Divider, background } from "@chakra-ui/react"
+import { Flex, Text, Image, Spacer,useColorModeValue, WrapItem, InputRightElement, Heading, Progress, Box, Button, List, ListItem, ListIcon, HStack, Icon, InputGroup, InputLeftElement, Input, Grid, Select, Table, Circle, Tbody, Tfoot, Tr, Th, Td, Avatar, Square, position, Divider, background } from "@chakra-ui/react"
 
 import { useRouter } from 'next/router';
-import { MdCheckCircle, MdDashboard, MdGroupWork, MdMenu, MdGridOn, MdInsertLink, MdNotifications, MdPeople, MdPerson, MdReceipt, MdSend, MdSettings, MdShoppingBasket, MdShoppingCart } from 'react-icons/md'
+import { MdCheckCircle, MdDashboard,MdGroupWork, MdMenu, MdGridOn, MdInsertLink, MdNotifications, MdPeople, MdPerson, MdReceipt, MdSend, MdSettings, MdShoppingBasket, MdShoppingCart } from 'react-icons/md'
 import { AiFillPieChart } from 'react-icons/ai';
 import { FaPen, FaSimCard, FaCcVisa } from 'react-icons/fa';
 import { BiLeftArrowCircle } from 'react-icons/bi'
@@ -21,12 +21,17 @@ import TableTlist from '../components/TableTlist';
 import Statuslist from '../components/Statuslist';
 
 const Cards = () => {
+     const bg1 = useColorModeValue("white", "rgb(27, 32, 44)");
+     const text = useColorModeValue("white", "rgb(27, 32, 44)");
+     const bg = useColorModeValue("#F5F6F8", "rgb(27, 32, 44)");
+     const bgcolor = useColorModeValue(" 1px solid #E1E3E6", " 1px solid rgb(27, 32, 44)");
     return (
         
        
-        <Flex width="80%" flex={10} bg="#F5F6F8" w="100%" marginLeft="2%" mt="140px" px="3%"  py="2%" pb="75px"   flexDir="column" overflowX="hidden" overflowY="auto"  
+        <Flex width="80%" flex={10} bg={bg} w="100%" marginLeft="2%" mt="140px" px="3%"  py="2%" pb="75px"   flexDir="column" overflowX="hidden" overflowY="auto"  
         style={{
-            border: "1px solid #E1E3E6",
+             border: bgcolor,
+    // border: "1px solid #E1E3E6",
       }}
         css={{
             '&::-webkit-scrollbar': {
@@ -43,23 +48,24 @@ const Cards = () => {
         
         >
 
-{/* <Circle size="40px" pos="fixed" right="85px" bg="white" top="30%" boxShadow="lg" zIndex={100}>
+{/* <Circle size="40px" pos="fixed" right="85px" bg={text} top="30%" boxShadow="lg" zIndex={100}>
                 <IoIosArrowForward size={30} color="#2A3042" />
             </Circle> */}
 
-            <Text color="#000000" fontWeight="bold" mb={5}>Cards</Text>
+            <Text  fontWeight="bold" mb={5}>Cards</Text>
 
 
             <Grid mb={5} templateColumns="repeat(4,2fr)" gap="6">
 
             {/* #8A0161 #01048A  482CD8 02058A*/}
                 <Flex borderRadius="9px" bgGradient="linear(to-l, #8A0161, #8A0161)" overflow="auto" bg="#01048A" direction="column" color="white" p={5} justifyContent="space-around" style={{
-                    border: "2px solid #E9F1FB",
+                    // border: "2px solid #E9F1FB",
 
                 }} w="350px" h="200" transition="transform .2s" _hover={{
                     transform: 'scale(1.1)',
                     color: "white",
                     background:"#8A0161"
+                    
                 }} >
                     <Flex direction="row" alignItems="baseline" justifyContent="space-between">
                         <FaSimCard size={30} style={{
@@ -114,7 +120,7 @@ const Cards = () => {
 
 
 
-                    <Flex borderRadius="15px" id="1" boxShadow="md"  position="absolute" top="0" left="0" bg="white" justifyContent="space-between" flexDirection="column" style={{
+                    <Flex borderRadius="15px" id="1" boxShadow="md"  position="absolute" top="0" left="0" bg={text} justifyContent="space-between" flexDirection="column" style={{
                       //  border: "1px solid #E1E3E6",
                         borderRadius: "1px solid #E1E3E6",
 
@@ -131,7 +137,7 @@ const Cards = () => {
 
                         <Box position="relative">
 
-                            <Text position="absolute" left="-3" color="#000000" style={{
+                            <Text position="absolute" left="-3"  style={{
                                 transform: "rotate(-90deg)"
                             }} fontWeight="bold" mt="5" fontSize="xs" >**** 5675</Text>
                         </Box>
@@ -159,7 +165,7 @@ const Cards = () => {
 
 
 
-                    <Flex borderRadius="10px" id="2" boxShadow="md" zIndex="9" marginLeft="80px" bg="white" position="absolute" top="0" left="0" justifyContent="space-between" flexDirection="column" style={{
+                    <Flex borderRadius="10px" id="2" boxShadow="md" zIndex="9" marginLeft="80px" bg={text} position="absolute" top="0" left="0" justifyContent="space-between" flexDirection="column" style={{
                       //  border: "2px solid #E9F1FB",
                     }} w="350px" h="200" p="3" transition="transform .2s" _hover={{
                         transform: 'scale(1.1)',
@@ -168,7 +174,7 @@ const Cards = () => {
                     }} >
                         <Box position="relative">
 
-                            <Text position="absolute" left="-3" color="#000000" style={{
+                            <Text position="absolute" left="-3"  style={{
                                 transform: "rotate(-90deg)"
                             }} fontWeight="bold" mt="5" fontSize="xs" >**** 5675</Text>
                         </Box>
@@ -188,7 +194,7 @@ const Cards = () => {
 
 
 
-                    <Flex borderRadius="10px" id="2" boxShadow="md" zIndex="10" marginLeft="160px" bg="white" position="absolute" top="0" left="0" justifyContent="space-between" flexDirection="column" style={{
+                    <Flex borderRadius="10px" id="2" boxShadow="md" zIndex="10" marginLeft="160px" bg={text} position="absolute" top="0" left="0" justifyContent="space-between" flexDirection="column" style={{
                        // border: "2px solid #E9F1FB",
                     }} w="350px" h="200" p="3" transition="transform .2s" _hover={{
                         transform: 'scale(1.1)',
@@ -197,7 +203,7 @@ const Cards = () => {
                     }} >
                         <Box position="relative">
 
-                            <Text position="absolute" left="-3" color="#000000" style={{
+                            <Text position="absolute" left="-3"  style={{
                                 transform: "rotate(-90deg)"
                             }} fontWeight="bold" mt="5" fontSize="xs" >**** 5675</Text>
                         </Box>
@@ -214,7 +220,7 @@ const Cards = () => {
 
                         </Flex>
                     </Flex>
-                    <Flex borderRadius="10px" id="2" boxShadow="md" zIndex="11" marginLeft="240px" bg="white" position="absolute" top="0" left="0" justifyContent="space-between" flexDirection="column" style={{
+                    <Flex borderRadius="10px" id="2" boxShadow="md" zIndex="11" marginLeft="240px" bg={text} position="absolute" top="0" left="0" justifyContent="space-between" flexDirection="column" style={{
                       //  border: "2px solid #E9F1FB",
                     }} w="350px" h="200" p="3" transition="transform .2s" _hover={{
                         transform: 'scale(1.1)',
@@ -223,7 +229,7 @@ const Cards = () => {
                     }} >
                         <Box position="relative">
 
-                            <Text position="absolute" left="-3" color="#273b71" style={{
+                            <Text position="absolute" left="-3"  style={{
                                 transform: "rotate(-90deg)"
                             }} fontWeight="bold" mt="5" fontSize="xs" >**** 5675</Text>
                         </Box>
@@ -242,7 +248,7 @@ const Cards = () => {
                     </Flex>
 
 
-                    <Flex borderRadius="10px" boxShadow="md" id="2" zIndex="12" marginLeft="320px" bg="white" position="absolute" top="0" left="0" justifyContent="space-between" flexDirection="column" style={{
+                    <Flex borderRadius="10px" boxShadow="md" id="2" zIndex="12" marginLeft="320px" bg={text} position="absolute" top="0" left="0" justifyContent="space-between" flexDirection="column" style={{
                   //      border: "2px solid #E9F1FB",
                     }} w="350px" h="200" p="3" transition="transform .2s" _hover={{
                         transform: 'scale(1.1)',
@@ -251,7 +257,7 @@ const Cards = () => {
                     }} >
                         <Box position="relative">
 
-                            <Text position="absolute" left="-3" color="#273b71" style={{
+                            <Text position="absolute" left="-3"  style={{
                                 transform: "rotate(-90deg)"
                             }} fontWeight="bold" mt="5" fontSize="xs" >**** 5675</Text>
                         </Box>
@@ -274,7 +280,7 @@ const Cards = () => {
 
 
 
-                    <Flex borderRadius="10px" id="2" boxShadow="md" zIndex="13" marginLeft="400px" bg="white" position="absolute" top="0" left="0" justifyContent="space-between" flexDirection="column" style={{
+                    <Flex borderRadius="10px" id="2" boxShadow="md" zIndex="13" marginLeft="400px" bg={text} position="absolute" top="0" left="0" justifyContent="space-between" flexDirection="column" style={{
                     //    border: "2px solid #E9F1FB",
                     }} w="350px" h="200" p="3" transition="transform .2s" _hover={{
                         transform: 'scale(1.1)',
@@ -283,7 +289,7 @@ const Cards = () => {
                     }} >
                         <Box position="relative">
 
-                            <Text position="absolute" left="-3" color="#273b71" style={{
+                            <Text position="absolute" left="-3"  style={{
                                 transform: "rotate(-90deg)"
                             }} fontWeight="bold" mt="5" fontSize="xs" >**** 5675</Text>
                         </Box>
@@ -302,7 +308,7 @@ const Cards = () => {
                     </Flex>
 
 
-                    <Flex borderRadius="10px" boxShadow="md" id="2" zIndex="14" marginLeft="480px" bg="white" position="absolute" top="0" left="0" justifyContent="space-between" flexDirection="column" style={{
+                    <Flex borderRadius="10px" boxShadow="md" id="2" zIndex="14" marginLeft="480px" bg={text} position="absolute" top="0" left="0" justifyContent="space-between" flexDirection="column" style={{
                       //  border: "2px solid #E9F1FB",
                     }} w="350px" h="200" p="3" transition="transform .2s" _hover={{
                         transform: 'scale(1.1)',
@@ -311,7 +317,7 @@ const Cards = () => {
                     }} >
                         <Box position="relative">
 
-                            <Text position="absolute" left="-3" color="#273b71" style={{
+                            <Text position="absolute" left="-3"  style={{
                                 transform: "rotate(-90deg)"
                             }} fontWeight="bold" mt="5" fontSize="xs" >**** 5675</Text>
                         </Box>
@@ -330,7 +336,7 @@ const Cards = () => {
                     </Flex>
 
 
-                    {/* <Flex borderRadius="10px" boxShadow="md" id="2" zIndex="14" marginLeft="540px" bg="white" position="absolute" top="0" left="0" justifyContent="space-between" flexDirection="column" style={{
+                    {/* <Flex borderRadius="10px" boxShadow="md" id="2" zIndex="14" marginLeft="540px" bg={text} position="absolute" top="0" left="0" justifyContent="space-between" flexDirection="column" style={{
                        // border: "2px solid #E9F1FB",
                     }} w="350px" h="200" p="3" transition="transform .2s" _hover={{
                         transform: 'scale(1.1)',
@@ -339,7 +345,7 @@ const Cards = () => {
                     }} >
                         <Box position="relative">
 
-                            <Text position="absolute" left="-3" color="#273b71" style={{
+                            <Text position="absolute" left="-3"  style={{
                                 transform: "rotate(-90deg)"
                             }} fontWeight="bold" mt="5" fontSize="xs" >**** 5675</Text>
                         </Box>
@@ -379,13 +385,13 @@ const Cards = () => {
             <Grid templateColumns="repeat(4,2fr)" gap="6">
                 <Box borderRadius="10px"
                 boxShadow="md"
-                color="#273b71"
-                    bgGradient="linear(to-bl, #27BC48, white,white,white)"
+                
+                    bgGradient={`linear(to-bl, #27BC48, ${bg1},${bg1},${bg1})`}
                     style={{
                       //  border: "2px solid #E9F1FB",
                     }} w="100%" h="150" p="3" transition="all .5s ease-out" _hover={{
                         //  transform: 'scale(1.1)',
-                        color: "white",
+                       
                         backgroundPosition: "bottom left ",
                         background:'linear-gradient(to left, #27BC48 50%, #27BC48 50%)'
                     }} >
@@ -403,7 +409,9 @@ const Cards = () => {
                 </Box>
                 <Box borderRadius="10px" 
                   boxShadow="md"
-                bgGradient="linear(to-bl, #B5C012, white,white,white)"style={{
+                  bgGradient={`linear(to-bl, #B5C012, ${bg1},${bg1},${bg1})`}
+               
+                style={{
                    // border: "2px solid #E9F1FB",
                 }} w="100%" h="150" p="3" transition="all .2s ease-in" _hover={{
                       //  transform: 'scale(1.1)',
@@ -424,7 +432,8 @@ const Cards = () => {
                 </Box>
                 <Box borderRadius="10px"
                   boxShadow="md"
-                  bgGradient="linear(to-bl, #DF1839, white,white,white)"
+                  bgGradient={`linear(to-bl, #DF1839, ${bg1},${bg1},${bg1})`}
+                
                 style={{
                  //   border: "2px solid #E9F1FB",
                 }} w="100%" h="150" p="3" transition="transform .6s" _hover={{
@@ -444,7 +453,9 @@ const Cards = () => {
                 </Box>
                 <Box borderRadius="10px"
                   boxShadow="md"
-                  bgGradient="linear(to-bl, #357ae2, white,white,white)"
+                  bgGradient={`linear(to-bl, #357ae2, ${bg1},${bg1},${bg1})`}
+                
+                
                 style={{
                     //border: "2px solid #E9F1FB",
                 }} w="100%" h="150" p="3" transition="transform .2s" _hover={{

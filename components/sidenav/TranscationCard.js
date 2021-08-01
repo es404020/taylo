@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Flex, Text,CircularProgress,UnorderedList,CircularProgressLabel, Image, Spacer, WrapItem, InputRightElement, Heading, Progress, Box, Button, List, ListItem, ListIcon, HStack, Icon, InputGroup, InputLeftElement, Input, Grid, Select, Table, Circle, Tbody, Tfoot, Tr, Th, Td, Avatar, Square, position } from "@chakra-ui/react"
+import { Flex,useColorModeValue, Text,CircularProgress,UnorderedList,CircularProgressLabel, Image, Spacer, WrapItem, InputRightElement, Heading, Progress, Box, Button, List, ListItem, ListIcon, HStack, Icon, InputGroup, InputLeftElement, Input, Grid, Select, Table, Circle, Tbody, Tfoot, Tr, Th, Td, Avatar, Square, position } from "@chakra-ui/react"
 
 import { useRouter } from 'next/router';
 import { MdCheckCircle, MdDashboard, MdGroupWork, MdMenu, MdGridOn, MdInsertLink, MdNotifications, MdPeople, MdPerson, MdReceipt, MdSend, MdSettings, MdShoppingBasket, MdShoppingCart } from 'react-icons/md'
@@ -12,12 +12,15 @@ import { PhoneIcon, SearchIcon } from "@chakra-ui/icons";
 import {BsQuestionCircle} from 'react-icons/bs'
 
 const TranscationCard = ({icon,text,error=true}) => {
+    const bg = useColorModeValue("#F9F9F9", "rgb(27, 32, 44)");
+    const texts = useColorModeValue("#000000", "white");
+    const tr= useColorModeValue("#53535F", "white");
     return (
-        <Flex  borderRadius="10px"  bg="white"  boxShadow="md" style={{
+        <Flex  borderRadius="10px"  bg={bg}  boxShadow="md" style={{
            // border: "2px solid #E9F1FB",
           }}  height="353px" p={3} direction="column">
 
-                <Text fontWeight="semibold" color="#000000">{text} <Icon as={icon}  boxSize={4} color="#C8C8DB"  display="inline" /></Text>
+                <Text fontWeight="semibold" >{text} <Icon as={icon}  boxSize={4} color="#C8C8DB"  display="inline" /></Text>
 
 
                 <Flex>
@@ -34,15 +37,15 @@ const TranscationCard = ({icon,text,error=true}) => {
 
 {error?(
     <UnorderedList  alignSelf="center">
-    <ListItem color="#00C9A7">  <Text color="#000000">Customer Errors: 0</Text></ListItem>
-    <ListItem color="#00C9A7"> <Text color="#000000">Fraud Blocks: 0</Text></ListItem>
-    <ListItem color="#00C9A7"> <Text color="#000000">Bank Errors: 0</Text></ListItem>
-    <ListItem color="#DE4436"> <Text color="#000000">System Errors: 1</Text></ListItem>
+    <ListItem color="#00C9A7">  <Text color={texts}>Customer Errors: 0</Text></ListItem>
+    <ListItem color="#00C9A7"> <Text color={texts}>Fraud Blocks: 0</Text></ListItem>
+    <ListItem color="#00C9A7"> <Text color={texts}>Bank Errors: 0</Text></ListItem>
+    <ListItem color="#DE4436"> <Text color={texts}>System Errors: 1</Text></ListItem>
   </UnorderedList>
 ):(
     <UnorderedList alignSelf="center">
-    <ListItem color="#00C9A7"> <Text color="#000000">Successful: 10</Text></ListItem>
-    <ListItem color="#DE4436"> <Text color="#000000">Processing Errors: 1</Text></ListItem>
+    <ListItem color="#00C9A7"> <Text color={texts}>Successful: 10</Text></ListItem>
+    <ListItem color="#DE4436"> <Text color={texts}>Processing Errors: 1</Text></ListItem>
    
   </UnorderedList>
 )}
