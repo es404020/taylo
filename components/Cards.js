@@ -23,7 +23,7 @@ import Statuslist from '../components/Statuslist';
 const Cards = () => {
      const bg1 = useColorModeValue("white", "rgb(27, 32, 44)");
      const text = useColorModeValue("white", "rgb(27, 32, 44)");
-     const bg = useColorModeValue("#F5F6F8", "rgb(27, 32, 44)");
+     const bg = useColorModeValue("#F5F6F8", "rgb(29 ,35, 47)");
      const bgcolor = useColorModeValue(" 1px solid #E1E3E6", " 1px solid rgb(27, 32, 44)");
     return (
         

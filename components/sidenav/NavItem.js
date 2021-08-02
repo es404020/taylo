@@ -14,7 +14,8 @@ const NavItem = ({ title, icon, active, show = true }) => {
         <Flex
 
             style={{
-                borderLeft: active ? "6px solid #01048A" : "none"
+                borderLeft: active ? "6px solid #01048A" : "none",
+                width:'100px'
             }}
 
             flexDir="column"

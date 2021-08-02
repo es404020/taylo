@@ -74,7 +74,7 @@ function Sidebar() {
       zIndex="2"
       bg={bg}
       boxShadow="md"
-      width="5%"
+      width="6%"
       flexDir="column"
       justifyContent="space-between"
       alignItems="center"
