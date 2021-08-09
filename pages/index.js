@@ -3,7 +3,7 @@
 
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Flex, Text, Image, Spacer, useColorModeValue,WrapItem, InputRightElement, Heading, Progress, Box, Button, List, ListItem, ListIcon, HStack, Icon, InputGroup, InputLeftElement, Input, Grid, Select, Table, Circle, Tbody, Tfoot, Tr, Th, Td, Avatar, Square, position } from "@chakra-ui/react"
+import { Flex, Text, Image, Spacer, useColorModeValue,WrapItem, InputRightElement, Heading, Progress, Box, Button, List, ListItem, ListIcon, HStack, Icon, InputGroup, InputLeftElement, Input, Grid, Select, Table, Circle, Tbody, Tfoot, Tr, Th, Td, Avatar, Square, position, Center } from "@chakra-ui/react"
 
 import { useRouter } from 'next/router';
 import { MdCheckCircle, MdDashboard, MdGroupWork, MdMenu, MdGridOn, MdInsertLink, MdNotifications, MdPeople, MdPerson, MdReceipt, MdSend, MdSettings, MdShoppingBasket, MdShoppingCart } from 'react-icons/md'
@@ -24,7 +24,9 @@ export default function Home() {
   const bg = useColorModeValue("#F9F9F9", "rgb(27, 32, 44)");
   const text = useColorModeValue("#01048A", "white");
   return (
-    <Flex w="100%"  flexDirection="column" bg="white" position="relative">
+
+    <>
+    <Flex w="100%"  flexDirection="column" bg="white" position="relative" display={["none","none","none","block","block"]}>
 
       <Headers />
 
@@ -56,6 +58,14 @@ export default function Home() {
 
     </Flex>
 
+<Flex w="100%"  justifyContent="center" alignItems="center" display={["block","block","block","none","none"]}>
+
+
+<Center  height="80vh" >
+  Use on a Laptop mobile view coming soon 🙏
+</Center>
+  </Flex>
+</>
 
   )
 }
